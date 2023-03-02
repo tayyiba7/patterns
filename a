@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int main()
+{
+    int rows=10,i,j,temp;
+    for(i=1;i<=1;i++)
+    {
+       for(j=1;j<=rows;j++)
+       {
+           if(j==(rows/2))   
+                printf("*");
+            else
+                printf(" ");
+                
+        }
+        printf("\n");
+    }
+    temp=rows;
+     for(i=2;i<=rows/2;i++)
+    {
+       for(j=1;j<=10;j++)
+       {
+           if((j==(temp/2)-i) || j==(temp/2)+i)   
+                printf("*");
+            else
+                printf(" ");
+                
+        }
+        printf("\n");
+    }
+
+    for(i=( rows/2 ) + 1 ;i<=(rows/2 )+1;i++)
+    {
+       for(j=1;j<=10;j++)
+       {
+                printf("*");
+                
+        }
+        printf("\n");
+    }
+    
+    for(i=( rows/2 ) + 2 ;i<=rows+1;i++)
+    {
+       for(j=1;j<=rows;j++)
+       {
+                if(j==1 || j==rows)
+                
+                printf("*");
+                else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    
+
+    return 0;
+}
